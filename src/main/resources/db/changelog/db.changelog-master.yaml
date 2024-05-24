@@ -1,0 +1,14 @@
+databaseChangeLog:
+#SQL Files---
+
+#  - include:
+#      file: db/changelog/db.changelog-tableCreation.sql
+#  - include:
+#      file: db/changelog/db.changelog-addColumn.sql
+
+#YAML Files---
+
+  - include:
+      file: db/changelog/db.changelog-tableCreation.yaml
+  - include:
+      file: db/changelog/db.changelog-addColumn.yaml

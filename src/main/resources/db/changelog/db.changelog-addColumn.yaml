@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: liquibase
+      author: Liquibase
+      changes:
+        - addColumn:
+            tableName: employee
+            columns:
+              - column:
+                  name: salary
+                  type: DOUBLE(9,2)

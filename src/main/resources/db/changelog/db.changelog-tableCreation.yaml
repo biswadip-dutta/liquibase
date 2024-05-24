@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: liquibase
+      author: Liquibase
+      changes:
+        - createTable:
+            tableName: employee
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: name
+                  type: VARCHAR(250)
+              - column:
+                  name: phone
+                  type: VARCHAR(250)
+              - column:
+                  name: email
+                  type: VARCHAR(250)
+              - column:
+                  name: designation
+                  type: VARCHAR(250)
+              - column:
+                  name: manager
+                  type: VARCHAR(250)
+              - column:
+                  name: department
+                  type: VARCHAR(250)
